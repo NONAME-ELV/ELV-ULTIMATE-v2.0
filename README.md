@@ -1,32 +1,5 @@
 <p align="center">
-  <svg width="100%" height="80" viewBox="0 0 700 80" xmlns="http://www.w3.org/2000/svg">
-    <defs>
-      <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" stop-color="#00ffff" />
-        <stop offset="50%" stop-color="#ff00ff" />
-        <stop offset="100%" stop-color="#00ff41" />
-      </linearGradient>
-      <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-        <feGaussianBlur stdDeviation="3" result="blur" />
-        <feComposite in="SourceGraphic" in2="blur" operator="over" />
-      </filter>
-    </defs>
-    <style>
-      .text-title {
-        font-family: 'Consolas', 'Courier New', monospace;
-        font-weight: 900;
-        font-size: 32px;
-        fill: url(#gradient);
-        filter: url(#glow);
-        animation: pulse 3s infinite alternate;
-      }
-      @keyframes pulse {
-        0% { opacity: 0.85; transform: scale(1); }
-        100% { opacity: 1; transform: scale(1.02); }
-      }
-    </style>
-    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" class="text-title">HxN × E.L.V ULTIMATE v2.0</text>
-  </svg>
+  <img src="https://readme-typing-svg.demolab.com?font=Consolas&weight=900&size=32&duration=3000&pause=1000&color=00FFFF&center=true&vCenter=true&width=700&height=80&lines=HxN+%C3%97+E.L.V+ULTIMATE+v2.0;ADVANCED+CYBERSECURITY+SUITE;ROOT+ACCESS+GRANTED" alt="Typing SVG">
 </p>
 
 <p align="center">
