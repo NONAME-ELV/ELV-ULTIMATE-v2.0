@@ -124,5 +124,5 @@ Distributed under the **MIT License**. See `LICENSE` for more information.
 ---
 
 <p align="center">
-  Made with ❤️ by <a href="https://github.com/yourusername">Your Name / Team</a>
+  Made with ❤️ by <a href="https://github.com/NONAME-ELV">HxN // E.L.V Firmware</a>
 </p>
