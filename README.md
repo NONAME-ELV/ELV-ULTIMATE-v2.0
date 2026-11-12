@@ -1,13 +1,23 @@
 <p align="center">
-  <svg width="100%" height="80" viewBox="0 0 800 80" xmlns="http://www.w3.org/2000/svg">
+  <svg width="100%" height="80" viewBox="0 0 700 80" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#00ffff" />
+        <stop offset="50%" stop-color="#ff00ff" />
+        <stop offset="100%" stop-color="#00ff41" />
+      </linearGradient>
+      <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="3" result="blur" />
+        <feComposite in="SourceGraphic" in2="blur" operator="over" />
+      </filter>
+    </defs>
     <style>
-      .bg { fill: #0d1117; }
-      .text-glow {
-        font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+      .text-title {
+        font-family: 'Consolas', 'Courier New', monospace;
         font-weight: 900;
-        font-size: 38px;
+        font-size: 32px;
         fill: url(#gradient);
-        filter: drop-shadow(0px 0px 8px rgba(0, 242, 254, 0.6));
+        filter: url(#glow);
         animation: pulse 3s infinite alternate;
       }
       @keyframes pulse {
@@ -15,161 +25,82 @@
         100% { opacity: 1; transform: scale(1.02); }
       }
     </style>
-    <rect width="100%" height="100%" class="bg" rx="10"/>
-    <defs>
-      <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" stop-color="#00f2fe" />
-        <stop offset="50%" stop-color="#4facfe" />
-        <stop offset="100%" stop-color="#00c6ff" />
-      </linearGradient>
-    </defs>
-    <text x="50%" y="52%" dominant-baseline="middle" text-anchor="middle" class="text-glow">
-      HxN × E.L.V ULTIMATE v2.0
-    </text>
+    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" class="text-title">HxN × E.L.V ULTIMATE v2.0</text>
   </svg>
 </p>
 
-> A collaborative, high-performance Python toolkit proudly built by **HxN × E.L.V**, designed to streamline your workflow, boost productivity, and elevate your development experience to the next level.
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Team](https://img.shields.io/badge/Team-HxN%20%C%20E.L.V-purple.svg)](https://github.com/HxN-ELV)
-[![Version](https://img.shields.io/badge/version-2.0.0-green.svg)](https://github.com/HxN-ELV/elv-ultimate-v2)
-[![Python Version](https://img.shields.io/badge/python-%3E%3D%203.8-brightgreen.svg)](https://www.python.org/)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-success.svg)](https://github.com/HxN-ELV/elv-ultimate-v2/graphs/commit-activity)
+<p align="center">
+  <img src="https://img.shields.io/badge/VERSION-2.0-cyan?style=for-the-badge&logo=python&logoColor=00ffff&color=121212" alt="Version">
+  <img src="https://img.shields.io/badge/AUTHOR-HxN-magenta?style=for-the-badge&logo=telegram&logoColor=ff00ff&color=121212" alt="Author">
+  <img src="https://img.shields.io/badge/STATUS-LOCKED%20&%20PATEN-green?style=for-the-badge&color=121212" alt="Status">
+</p>
 
 ---
 
-## 🌟 Overview
+## ⚡ Overview
 
-**HxN × E.L.V Ultimate v2.0** is an exclusive, feature-rich utility suite born from the collaboration between **HxN** and **E.L.V**. Building upon previous versions, this major release brings a completely overhauled architecture, lightning-fast execution speeds, enhanced security protocols, and an extensive arsenal of powerful tools to handle complex automation and penetration tasks effortlessly.
-
----
-
-## 🛠️ Arsenal List (The Complete Suite)
-
-Here is the complete catalog of high-performance modules and tools included in your **HxN × E.L.V Ultimate v2.0** arsenal:
-
-### 1. 🔍 Recon & Information Gathering
-- **Target Profiler (`recon.profiler`)**: Deep-scans target endpoints and aggregates metadata.
-- **Subdomain Enumerator (`recon.subdom`)**: High-speed multi-threaded subdomain discovery tool.
-- **Port Scanner Pro (`recon.portscan`)**: Advanced TCP/UDP port mapping with service version detection.
-- **ASN & IP Intelligence (`recon.intel`)**: Gathers autonomous system numbers, GeoIP data, and hosting provider info.
-
-### 2. ⚡ Web Exploitation & Testing
-- **SQLi Auditor (`web.sqli`)**: Automated scanner for detecting SQL injection vulnerabilities.
-- **XSS Payload Injector (`web.xss`)**: Tests reflection points and injects customized XSS vectors.
-- **Directory Brute-Forcer (`web.dirbuster`)**: Asynchronous path and file finder using custom wordlists.
-- **Header Security Analyzer (`web.headers`)**: Audits HTTP security headers (CSP, HSTS, X-Frame-Options, etc.).
-
-### 3. 🔐 Cryptography & Hashing
-- **Hash Cracker Suite (`crypto.cracker`)**: Supports MD5, SHA-256, bcrypt, and Argon2 brute-forcing/dictionary matching.
-- **JWT Inspector & Forger (`crypto.jwt`)**: Decodes, verifies, and tests JSON Web Tokens for security flaws.
-- **AES/RSA Vault (`crypto.vault`)**: Encrypts and decrypts sensitive configuration payloads securely.
-
-### 4. 🤖 Automation & Workflow
-- **Macro Script Runner (`auto.macro`)**: Executes complex multi-step automated workflows.
-- **API Request Fuzzers (`auto.fuzzer`)**: Sends randomized payloads to endpoints to discover unexpected behavior.
-- **Webhook Dispatcher (`auto.webhook`)**: Integrates seamlessly with Discord, Telegram, and Slack for alerts.
-
-### 5. 📊 Reporting & Utility
-- **HTML/PDF Report Generator (`utils.reporter`)**: Compiles scan logs and vulnerability findings into executive-ready reports.
-- **Log Streamer & Sanitizer (`utils.logger`)**: Real-time console color logging with output sanitization.
+**HxN × E.L.V Ultimate v2.0** is an advanced, high-performance cybersecurity toolkit and multi-threaded automation suite engineered for security research, red teaming operations, reconnaissance, and penetration testing. Built with a cyberpunk neon aesthetic interface and powered by robust Python scripting.
 
 ---
 
-## 📦 Prerequisites
+## 🛠️ Complete Arsenal & Modules
 
-Before you begin, ensure you have Python installed on your system:
-- **Python** (v3.8 or higher recommended)
-- **pip** (Python package manager)
+| Module / Tool | Description |
+| :--- | :--- |
+| **Dork Maker & Generator** | Advanced search query generator with combinatorics (Simple, Advanced, Ultimate patterns & categories). |
+| **Dork Scanner** | Multi-threaded search engine crawler (Google, Bing, Yahoo, AltaVista) with smart domain filtering & proxy support. |
+| **WP Brute Force Engine** | Intelligent WordPress brute-force engine with XML-RPC checks, smart username extraction (`wp-json`), and password generators. |
+| **SQLi Exploit Engine** | Automated SQL injection scanner and extractor supporting Union-based, Error-based, Boolean-based, and Time-based techniques. |
+| **Param Finder** | Discovers hidden parameters, input fields, and query strings from target URLs, HTML forms, and JavaScript files. |
+| **Subdomain Finder** | Enumerates subdomains via Certificate Transparency logs (crt.sh) and high-speed DNS brute-forcing. |
+| **URL Filter & Cleaner** | Cleans, filters, deduplicates URL lists, removes common noise domains, and extracts clean endpoints. |
+| **Web Vuln Checker** | Scans web applications for common misconfigurations, backup files, config exposures, and version disclosures. |
+| **CVE WP Exploiter** | Exploits known WordPress vulnerabilities and plugin flaws for research and assessment. |
+| **Backdoor Manager** | Manages web shells, payloads, and post-exploitation entry points. |
+| **Mass Deface** | Multi-threaded file management and deployment utility. |
+| **Advanced Recon** | Deep target profiling, technology fingerprinting, and asset discovery. |
+| **Proxy Rotator** | Manages and rotates HTTP/Socks proxies to bypass rate-limiting and blocks. |
+| **Data Exfiltration** | Securely packs and extracts structured data or credentials. |
+| **Session Hijacking** | Cookie and token analysis toolkit. |
+| **Email Spamming** | Automated mail dispatch utility for notification and stress testing. |
+| **Ransomware Dropper** | Payload staging and simulation utility. |
+| **DDoS Attack Suite** | Multi-threaded network stress testing module. |
 
 ---
 
-## 📥 Installation
+## 🚀 Installation & Usage
 
-Clone the repository and install the required dependencies:
+### Prerequisites
+* Python 3.x
+* Required libraries (`requests`, `beautifulsoup4`, `pyttsx3`, etc.)
 
+### 1. Clone & Setup
 ```bash
-# Clone the repository
-git clone https://github.com/HxN-ELV/elv-ultimate-v2.git
-
-# Navigate to the project directory
-cd elv-ultimate-v2
-
-# Install required dependencies
+git clone https://github.com/NONAME-ELV/elv-ultimate.git
+cd elv-ultimate
 pip install -r requirements.txt
 ```
 
----
+### 2. Execution
 
-## 🚀 Quick Start & Usage
+* **Linux / macOS:**
+  ```bash
+  python3 elv-ultimate.py
+  ```
 
-Get **HxN × E.L.V Ultimate v2.0** up and running in your environment instantly using the appropriate command for your operating system:
-
-### For Linux / macOS:
-```bash
-python3 elv-ultimate.py --help
-```
-
-### For Windows:
-```cmd
-python elv-ultimate.py --help
-```
+* **Windows:**
+  ```cmd
+  python elv-ultimate.py
+  ```
 
 ---
 
-## 💻 Example Code Integration
+## 📞 Contact & Channels
 
-Here is a quick example of how to import and utilize an arsenal module inside your custom Python scripts:
-
-```python
-from core.arsenal import ELVToolkit
-
-def main():
-    # Initialize the toolkit suite
-    toolkit = ELVToolkit(mode="pro", debug=False)
-    
-    # Run a specific arsenal module (e.g., Recon Profiler)
-    target = "https://example.com"
-    print(f"[*] Launching target profiling on: {target}")
-    
-    result = toolkit.execute_module("recon.profiler", target=target)
-    print("[+] Execution completed successfully:", result)
-
-if __name__ == "__main__":
-    main()
-```
-
----
-
-## 🗺️ Roadmap
-
-- [x] Core architecture refactoring (v2.0)
-- [x] Comprehensive HxN × E.L.V Arsenal module integration
-- [ ] Web-based graphical dashboard interface
-- [ ] Cloud synchronization for custom macro configurations
-- [ ] Native support for additional scripting runtimes
-
----
-
-## 🤝 Contributing
-
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
----
-
-## 📄 License
-
-Distributed under the **MIT License**. See `LICENSE` for more information.
-
----
+* **Author:** HxN
+* **Telegram Channel / Group:** [@WEBSHELL999](https://t.me/WEBSHELL999) / [@allaboutcve](https://t.me/allaboutcve)
+* **Personal Telegram:** [@HxNoname](https://t.me/HxNoname)
 
 <p align="center">
-  Crafted with ❤️ by <b>HxN × E.L.V Team</b>
+  <b>⚡ ROOT ACCESS GRANTED — STAY SECURE ⚡</b>
 </p>
