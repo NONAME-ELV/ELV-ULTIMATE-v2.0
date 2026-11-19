@@ -71,9 +71,8 @@ pip install -r requirements.txt
 ## 📞 Contact & Channels
 
 * **Author:** HxN
-* **Telegram Channel / Group:** [@WEBSHELL999](https://t.me/WEBSHELL999) / [@allaboutcve](https://t.me/allaboutcve)
+* **GitHub:** [NONAME-ELV](https://github.com/NONAME-ELV)
 * **Personal Telegram:** [@HxNoname](https://t.me/HxNoname)
-
-<p align="center">
-  <b>⚡ ROOT ACCESS GRANTED — STAY SECURE ⚡</b>
-</p>
+* **Main Channel:** [@NonameOfficial999](https://t.me/NonameOfficial999)
+* **CVE & Security Channel / Group:** [@allaboutcve](https://t.me/allaboutcve)
+* **Webshell & Research Channel:** [@WEBSHELL999](https://t.me/WEBSHELL999)
